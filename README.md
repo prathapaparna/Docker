@@ -19,6 +19,9 @@ docker ps -a
   
   docker exec -it <conatinername/id>  /bin/bash
   
-  docker cp <filepath> <container-ID>:<folder-path>
+  docker cp <filepath> <container-ID>:<folder-path> ---linux to container
+  
+  docker cp <container-ID>:<folder-path> <filepath> --- container to linux
+  
   
   
