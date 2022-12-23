@@ -25,5 +25,6 @@ docker ps -a
   
   
   
-  
+  ### create custom ngnix docker image
+https://devopscube.com/build-docker-image/
   
