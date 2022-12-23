@@ -43,7 +43,7 @@ enter the password
 <img width="385" alt="image" src="https://user-images.githubusercontent.com/99127429/209327481-c40a69cd-8258-480e-a60f-25b95b9b4e12.png">
 <img width="476" alt="image" src="https://user-images.githubusercontent.com/99127429/209327555-d7b6b4e7-f2c1-4e2d-813e-f3a3f210d2a9.png">
 
-### cReate a tag and push
+### Create a tag and push
 
 ```
 docker tag nginx:1.0 aparnaprathap/nginx:1.0
