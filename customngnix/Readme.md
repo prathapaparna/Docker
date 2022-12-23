@@ -30,5 +30,5 @@ docker run -d -p 9090:80 --name webserver nginx:1.0
 - Goto ec2 server --> security groups --> add inbound rules --> add port number 9090
 
 ## step-06: browse the application
-![image](<img width="396" alt="image" src="https://user-images.githubusercontent.com/99127429/209326790-93911c0f-2240-46f3-b53a-c7b365b1996a.png">
-)
+<img width="396" alt="image" src="https://user-images.githubusercontent.com/99127429/209327173-5b96259b-57eb-4b44-b1d1-f0b462e12585.png">
+
