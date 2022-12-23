@@ -49,6 +49,8 @@ enter the password
 docker tag nginx:1.0 aparnaprathap/nginx:1.0
 docker push aparnaprathap/nginx:1.0
 ```
+we can the image like below
+<img width="933" alt="image" src="https://user-images.githubusercontent.com/99127429/209327933-6019bddd-e698-45d9-87f6-2b538f2af28e.png">
 
 
 
