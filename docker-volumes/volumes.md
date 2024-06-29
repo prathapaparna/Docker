@@ -1,5 +1,6 @@
 ## types of volumes
 local volume:   backup is taken in host system
+
 network volume:   backup is taken outside of host ex: EFS
 ```
 docker volume --help
