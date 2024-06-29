@@ -1,6 +1,6 @@
 # Dockerfile
 A Dockerfile is a text file that contains a series of instructions on how to build a Docker image. These instructions are executed sequentially, and each instruction creates a new layer in the Docker image
-
+```
 FROM           ## Sets the base image for the subsequent instructions.
 LABEL          ## Adds metadata to an image in the form of key-value pairs. EX: LABEL maintainer="you@example.com"
 RUN            ## Executes commands while creating an image
@@ -14,7 +14,8 @@ USER           ## Sets the user name or UID to use when running the image and fo
 CMD           ## Specifies the default command to run when a container is started from the image. This instruction can be overridden by passing a command to docker run.
 ENTRYPOINT    ## Configures a container that will run as an executable.
 SHELL         ## Allows the default shell used for the shell form of commands to be overridden.
-HEALTHCHECK   ## Tells Docker how to test the container to check that it is still working. ex: HEALTHCHECK --interval=5m --timeout=3s CMD curl -f http://localhost/ || exit 1
+HEALTHCHECK   ## Tells Docker how to test the container to check that it is still working. ex: HEALTHCHECK --interval=5m --timeout=3s CMD curl -f http://localhost/ || exit1
 ONBUILD       ## Adds a trigger instruction to the image that will be executed when the image is used as the base for another build.ex: ONBUILD ADD . /app/src
 VOLUME        ## Creates a mount point with the specified path and marks it as holding externally mounted volumes from the host or other containers.
+```
 
