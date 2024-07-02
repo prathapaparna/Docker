@@ -7,7 +7,7 @@ RUN            ## Executes commands while creating an image
 COPY           ## Copies files or directories from the host machine to the image.
 ADD            ## Similar to COPY but with additional features such as extracting tar files and fetching files from URLs.
 ENV            ## Sets environment variables ex: ENV APP_ENV=production
-ARG            ## Defines a build-time variable.  ex: ARG VERSION=1.0.0
+ARG            ## The ARG instruction in Dockerfiles defines variables that users can pass at build-time to the builder with the docker build command.
 WORKDIR        ## Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow.
 EXPOSE         ## Informs Docker that the container listens on the specified network ports at runtime
 USER           ## Sets the user name or UID to use when running the image and for any RUN, CMD, and ENTRYPOINT instructions that follow.
