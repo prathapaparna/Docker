@@ -1,1 +1,6 @@
+ARG VERSION=latest
+FROM ubuntu:${VERSION}
 
+ARG VERSION
+ARG FILENAME
+COPY ${FILENAME} /home/ubuntu/${FILENAME}
