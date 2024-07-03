@@ -1,5 +1,5 @@
 ## types of volumes
-local volume:   backup is taken in host system
+local volume:   backup is taken in host system: default location is /var/lib/docker/volumes/
 
 network volume:   backup is taken outside of host ex: EFS
 ```
