@@ -34,6 +34,19 @@ docker container inspect <container-name/id> ---> you can get ip container1
 docker exec -it  <container-name/id> sh  ---> login to c2
 ping ip(c1)
 ```
+we can able to ping ngnix
+![image](https://github.com/prathapaparna/Docker/assets/99127429/de2d3349-5501-4042-95fc-2b4d8b0b86fa)
+
+we are not able to ping mongodb
+![image](https://github.com/prathapaparna/Docker/assets/99127429/0725568d-3e0c-4c84-aa83-b4d841daf908)
+
+- connect network to container
+  ```
+  docker network connect <network-name> <container-name>
+  docker network disconnect <network-name> <container-name>
+  ```
+
+
 
 
 
