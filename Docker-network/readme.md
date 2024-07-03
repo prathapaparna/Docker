@@ -21,6 +21,7 @@ docker network create --driver bridge mynetwork
 docker network ls
 ```
 - create springboot and nginx with default container and create database with custom bridge network
+- note: if we don't mention any network by default they get created in default network
   ```
   docker run --name springboot-mongodb  -p 8080:8080 -d techcloudifyme/springboot-mongodb:latest
   docker run --name mynginx  -d -p 8080:80 nginx
