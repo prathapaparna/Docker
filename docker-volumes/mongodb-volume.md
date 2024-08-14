@@ -35,6 +35,7 @@ Check API:- /findAllEmployees
 Goto Web UI and check below link
 
     http://<ip-address>:8080/findAllEmployees
+  **Note** delete and recreate container and check data is exist or not  
 # create the same container with volume backup
 ```
 docker volume create mongodb_backup
