@@ -36,4 +36,29 @@ Goto Web UI and check below link
 
     http://<ip-address>:8080/findAllEmployees
 # create the same container with volume backup
+```
+docker volume create mongodb_backup
+docker run --name mymongodb -v mongodb_backup:/data/db -p 27017:27017 -d mongo
+docker run --name springboot-mongodb --link mymongodb:mymongodb -p 8080:8080 -d techcloudifyme/springboot-mongodb:latest
+```
+# Use postman app and Add Employee data
+Check API: /addEmployee
+
+    http://<ip-address>:8080/addEmployee
+  
+In postman app keep Post method and give Json data by selecting Body --> raw (Json format)
+
+    {"id": "1001", "name": "techcloudifyme", "departement": "Engineer"}
     
+Check API:- /findAllEmployees
+
+Goto Web UI and check below link
+
+    http://<ip-address>:8080/findAllEmployees
+
+## now delete and recreate same containers and check the employees data
+```
+docker run --name mymongodb -v mongodb_backup:/data/db -p 27017:27017 -d mongo
+docker run --name springboot-mongodb --link mymongodb:mymongodb -p 8080:8080 -d techcloudifyme/springboot-mongodb:latest
+```
+
