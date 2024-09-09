@@ -1,14 +1,28 @@
-#version: "3.8"
+version: "3.8"
+
 services:
   mymongodb:
     image: mongo:latest
     container_name: "mymongodb"
     ports:
      - 27017:27017
+    volumes:
+     - mongodb_data:/data/db
+    networks:
+     - mynetwork  # Attach this service to the mynetwork
+
   springboot-mongodb:
-    image: techcloudifyme/springboot-mongodb:latest
+    image: springboot-mongo:latest
     container_name: springboot-mongodb
     ports:
       - 8080:8080
-    links:
-      - mymongodb  
+    networks:
+     - mynetwork  # Attach this service to the same network
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  mongodb_data:
+  
